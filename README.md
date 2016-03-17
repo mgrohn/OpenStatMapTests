@@ -1,7 +1,5 @@
 # Toimialakehitys
 
-Note! I will commit server.r and ui.r files on Thursday evening.
-
 Visual data exploration of national economic activities. 
 
 This repository includes currently ongoing project, which has two goals. First one is to explore and understand the current status and
