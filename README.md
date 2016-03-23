@@ -11,3 +11,13 @@ In current version, I have combined open data available from Statistics Finland 
 interactive map, three static maps, and parallel coordinates visualization. Map visualizations are based on work presented in http://louhos.github.io/news/2015/06/06/kuntakartat/
 
 The user interface development is actively ongoing project. 
+
+To run in Rstudio you need shiny. If you haven't it installed, then simply give commands: 
+
+install.packages(shiny)
+library(shiny) 
+
+and then finally
+
+runGitHub("Toimialakehitys","mgrohn")
+
