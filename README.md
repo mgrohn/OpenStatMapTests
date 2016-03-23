@@ -15,9 +15,10 @@ The user interface development is actively ongoing project.
 To run in Rstudio you need shiny. If you haven't it installed, then simply give commands: 
 
 install.packages(shiny)
+
 library(shiny) 
 
-and then finally
+and then finally 
 
 runGitHub("Toimialakehitys","mgrohn")
 
