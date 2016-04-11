@@ -507,8 +507,9 @@ shinyServer(
             
       parcoord(plotdata, col=tcol3, lwd=4, lty= lt, main = partitle, var.label=TRUE)
 
-      print(c(input$Kuntalista," str output: ",str(input$Kuntalista),mode(input$Kuntalista),input$Kuntalista[1],
-              length(input$Kuntalista)))
+# debuggaus tulostus
+#      print(c(input$Kuntalista," str output: ",str(input$Kuntalista),mode(input$Kuntalista),input$Kuntalista[1],
+#              length(input$Kuntalista)))
       
 # suuralueiden värit      
       legend("bottomright",inset=c(0,-1.0), legend=legendtext[3:length(tcol)], fill=tcol[3:length(tcol)])
