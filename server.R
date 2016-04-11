@@ -349,7 +349,6 @@ shinyServer(
                        "3" = tptoimialakoodit[as.numeric(input$Kartta2)])
       ncuts<-input$cut1
       
-      print(c("kakkoskartta ",colvar2))
       otsikko <- c(colvar2)
       
       spplot(sp2,zcol=colvar2, colorkey = TRUE, cuts=ncuts, main = otsikko)
