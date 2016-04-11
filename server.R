@@ -483,11 +483,12 @@ shinyServer(
       pdata[c("maxdata"),] <- maxdata
       vpdata[c("maxdata"),] <- maxdata
       tpdata[c("maxdata"),] <- maxdata
-      
-      print("Rinn alustukset ohitettu")
-      print(c(tcol,tcol2,tcol3))
-      print(pdata)
-      print(parcoorddata)
+
+# debuggaus tulostuksia      
+#      print("Rinn alustukset ohitettu")
+#      print(c(tcol,tcol2,tcol3))
+#      print(pdata)
+#      print(parcoorddata)
 
 # sallitaan plotin ulkopuolelle piirto ja muutetaan marginaaleja (bottom,left,top,right)            
       par(mar=c(12,4,4,2),xpd=TRUE)
