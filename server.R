@@ -198,7 +198,7 @@ sp2 <- sp::merge(sp, Toimialamuutos, all.x = TRUE, by.x = "kuntakoodi", by.y="Ku
 
 # Rinnakkaiskoordinaatistoaineisto
 
-# Asetetaan datalle alustavat minimi- ja maksimiarvot sekä sarakeotsiko
+# Asetetaan muutosdatalle alustavat minimi- ja maksimiarvot sekä sarakeotsiko
 parcoorddata <- data.frame(-5,-5,-5,-5,-5,-5,-5,-5)
 row.names(parcoorddata)<-c("mindata")
 colnames(parcoorddata)<-(toimialakoodit)
@@ -209,6 +209,7 @@ for(i in 1:length(parcoorddata)){
 }
 parcoorddata[c("maxdata"),] <- maxdata
 
+# Asetetaan vanhimman ja tuoreimman aineiston alustavat minimi- ja maksimiarvot
 vpmin<-0
 vpmax<-45
 tpmin<-0
@@ -247,15 +248,14 @@ tparcoorddata[c("Koko"),]<-Toimialamuutos[Toimialamuutos$Alue %in% c("Koko"), tp
 tcol<-c(tcol,"black")
 legendtext<- c(legendtext,"Koko maa")
 
-# Suuralueet eli sp2$AVI on koodi ja AVI.FI alueviraston nimi
-# mahd na:t pois
-
 # suuraluevärit, käytetään ColorBrewerin luokitteluun tarkoitettua värikarttaa
 sacolors<-brewer.pal(8,"Set2")
 
 # min, max ja koko maa sekä suuralueet yhtenäisellä viivalla
 lty<-c(1,1,1)
 
+# Suuralueet eli sp2$AVI on koodi ja AVI.FI alueviraston nimi
+# mahd na:t pois
 # lasketaan suuralueiden prosentit henkilömäärien mukaan.
 
 for(i in 1:nlevels(sp2$AVI)){
