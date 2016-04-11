@@ -46,6 +46,7 @@ shinyUI(fluidPage(
       tabPanel("Interaktiivinen",
                leafletOutput("Interaktiivinen")
                ),
+      # Muuttujakuvaukset suoraan tilastokeskuksen TOL2008 toimialamäärittelystä
       tabPanel("Muuttujakuvaukset",
                h2("Muuttujakuvaukset"),
                p("A Maatalous, metsätalous ja kalatalous"),
