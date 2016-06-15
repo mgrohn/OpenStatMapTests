@@ -30,7 +30,7 @@ Liikkeelle on lähdetty aineiston vanhimman ja tuoreimman aineiston tarkastelust
 
 Käyttöliittymässä vasemmassa palkissa käyttäjä valitsee ensin tarkasteltavan aineiston. Jakovalinnalla valitaan kuinka moneen segmenttiin aineisto jaetaan. Kartta[1-3] valinnalla valitaan, mikä aineisto näytetään missäkin kartassa. Muuttujakuvaukset sivulta voi tarkistaa, mitkä toimialat kuuluvat kuhunkin kirjain/kirjainyhdistelmä valintaan. Vuorovaikutteisen kartan väritys tulee Kartta1-muuttujan mukaan ja kuntatieto popup-ikkunassa näytetään Kartta-valinnoilla valittujen kolmen toimialan/toimialayhdistelmän kuntakohtaiset tiedot. Värikartta valinnalla valitaan käytettävä värikartta. Kuntavalinnalla valitaan yksi tai useampi kunta esitettäväksi rinnakkaiskoordinaatistoesityksissä. Minimi- ja maksimi säädöillä voidaan asettaa rinnakkaiskoordinaatistoesityksen minimi- ja maksimi-arvot mahdollisimman lähelle aineiston arvoja, jotta esityksen erottelukyky on paras mahdollinen. Rinnakkaiskoordinaatistoesityksessa kunnat esitetään katkoviivalla ja muut yhtenäisellä.
 
-Tämän hetkisen version toteutus vaati noin pari viikkoa kalenteriaikaa.
+Tämän hetkisen version toteutus on vaatinut noin pari viikkoa kalenteriaikaa.
 
 # Kehitysajatuksia, joita toteutetaan ajan salliessa
 - väriasteikkojen hienosäätö ja eteenpäin kehittäminen
