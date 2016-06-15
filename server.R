@@ -1,7 +1,6 @@
 # server.R
 # Kuntien väestö toimialan mukaan
 
-
 library(sorvi)
 library(pxweb)
 library(gisfin)
