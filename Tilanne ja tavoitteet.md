@@ -11,9 +11,20 @@ Tällä hetkellä ohjelma hakee kolme eri aineistoa Tilastokeskuksen ja Maanmitt
 Ensimmäinen aineisto sisältää tiedon kunnan alueella työssäkäyvien henkilöiden määrän luokiteltuna TOL 2008 määrittelyn mukaisesti.
 Ohjelmassa käytettävät kirjainkoodit A-Q ovat TOL2008 -koodeja. Kuntakoodien avulla ensimmäinen aineisto saadaan liitettyä MML:n tarjoamaan karttapohjaan http://louhos.github.io/news/2015/06/06/kuntakartat/ tarjoaman esimerkin mukaisesti. Tämän esimerkin pohjalta on toteutettu kolme staattista karttaa ja yksi interaktiivinen kartta. Lisäksi olen tehnyt rinnakkaiskoordinaatistosesityksen, jossa nähdään koko maan ja suuralueiden tilanne. Käyttäjä voi vertailla siinä valitsemiensa kuntien tilannetta sekä keskenään, että koko maan ja suuralueiden tilanteeseen. 
 
-Avoin data haetaan pxweb-paketin avulla. Käyttöliittymä on toteutettu shiny-paketin avulla. Karttavisualisoinneissa käytetään gisfin- ja leaflet -paketteja. Rinnakkaiskoordinaatistoesitys on toteutettu MASS-paketin parcoord-komennolla. Värikartat on poimittu RColorBrewer -paketista.
+Ohjelma on toteutettu RStudio-ympäristössä. Avoin data haetaan pxweb-paketin avulla. Käyttöliittymä on toteutettu shiny-paketin avulla. Karttavisualisoinneissa käytetään gisfin- ja leaflet -paketteja. Rinnakkaiskoordinaatistoesitys on toteutettu MASS-paketin parcoord-komennolla. Värikartat on poimittu RColorBrewer -paketista.
 
+Ohjelman tarvitsemat paketit ovat: shiny, sorvi, pxweb, gisfin, RColorBrewer, leaflet, MASS ja plyr
 
+Esim. shiny otetaan käyttöön seuraavasti:
+```
+install.packages(shiny)
+library(shiny) 
+```
+Kun kaikki paketit ovat käytettävissä, ohjelma suoritetaan komennolla:
+
+```
+runGitHub("Toimialakehitys","mgrohn")
+```
 
 Liikkeelle on lähdetty aineiston vanhimman ja tuoreimman aineiston tarkastelusta, sekä muutoksesta tarkastelujakson aikana. 
 
