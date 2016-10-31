@@ -25,7 +25,7 @@ Kun kaikki paketit ovat käytettävissä, ohjelma suoritetaan komennolla:
 ```
 runGitHub("Toimialakehitys","mgrohn")
 ```
-Vaihtoehtoisesti ohjelman voi testata suoraan osoitteessa:
+Vaihtoehtoisesti ohjelman voi testata suoraan osoitteessa: https://mgrohn.shinyapps.io/Toimialatalueittain/
 
 ```
 https://mgrohn.shinyapps.io/Toimialatalueittain/
