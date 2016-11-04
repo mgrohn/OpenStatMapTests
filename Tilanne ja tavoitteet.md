@@ -13,6 +13,15 @@ Ohjelmassa käytettävät kirjainkoodit A-Q ovat TOL2008 -koodeja. Kuntakoodien 
 
 Ohjelma on toteutettu RStudio-ympäristössä. Avoin data haetaan pxweb-paketin avulla. Käyttöliittymä on toteutettu shiny-paketin avulla. Karttavisualisoinneissa käytetään gisfin- ja leaflet -paketteja. Rinnakkaiskoordinaatistoesitys on toteutettu MASS-paketin parcoord-komennolla. Värikartat on poimittu RColorBrewer -paketista.
 
+Ohjelman voi testata suoraan osoitteessa: https://mgrohn.shinyapps.io/Toimialatalueittain/ tai RStudiossa alla olevien tarkempien ohjeiden mukaan.
+
+```
+https://mgrohn.shinyapps.io/Toimialatalueittain/
+```
+Ohjelman käynnistyminen kestää hetken aikaa, koska aineistojen haku suoritetaan ohjelman käynnistyessä. Lisäksi verkon yli ajettuna toiminta on hitaampi kuin RStudio-ympäristössä. 
+
+Liikkeelle on lähdetty aineiston vanhimman ja tuoreimman aineiston tarkastelusta, sekä muutoksesta tarkastelujakson aikana. 
+
 Ohjelman tarvitsemat paketit ovat: shiny, sorvi, pxweb, gisfin, RColorBrewer, leaflet, MASS ja plyr
 
 Esim. shiny otetaan käyttöön seuraavasti:
@@ -25,14 +34,6 @@ Kun kaikki paketit ovat käytettävissä, ohjelma suoritetaan komennolla:
 ```
 runGitHub("Toimialakehitys","mgrohn")
 ```
-Vaihtoehtoisesti ohjelman voi testata suoraan osoitteessa: https://mgrohn.shinyapps.io/Toimialatalueittain/
-
-```
-https://mgrohn.shinyapps.io/Toimialatalueittain/
-```
-Ohjelman käynnistyminen kestää hetken aikaa, koska aineistojen haku suoritetaan ohjelman käynnistyessä.
-
-Liikkeelle on lähdetty aineiston vanhimman ja tuoreimman aineiston tarkastelusta, sekä muutoksesta tarkastelujakson aikana. 
 
 Käyttöliittymässä vasemmassa palkissa käyttäjä valitsee ensin tarkasteltavan aineiston. Jakovalinnalla valitaan kuinka moneen segmenttiin aineisto jaetaan. Kartta[1-3] valinnalla valitaan, mikä aineisto näytetään missäkin kartassa. Muuttujakuvaukset sivulta voi tarkistaa, mitkä toimialat kuuluvat kuhunkin kirjain/kirjainyhdistelmä valintaan. Vuorovaikutteisen kartan väritys tulee Kartta1-muuttujan mukaan ja kuntatieto popup-ikkunassa näytetään Kartta-valinnoilla valittujen kolmen toimialan/toimialayhdistelmän kuntakohtaiset tiedot. Värikartta valinnalla valitaan käytettävä värikartta. Kuntavalinnalla valitaan yksi tai useampi kunta esitettäväksi rinnakkaiskoordinaatistoesityksissä. Minimi- ja maksimi säädöillä voidaan asettaa rinnakkaiskoordinaatistoesityksen minimi- ja maksimi-arvot mahdollisimman lähelle aineiston arvoja, jotta esityksen erottelukyky on paras mahdollinen. Rinnakkaiskoordinaatistoesityksessa kunnat esitetään katkoviivalla ja muut yhtenäisellä.
 
@@ -42,7 +43,7 @@ Tämän hetkisen version toteutus on vaatinut noin pari viikkoa kalenteriaikaa.
 
 # Kehitysajatuksia, joita toteutetaan tarpeen vaatiessa
 - väriasteikkojen hienosäätö ja eteenpäin kehittäminen
-- värikartan vaihto aineiston mukaan eli muutokselle eri kuin muille
+- värikartan vaihto aineiston mukaan eli esimerkiksi muutokselle eri kuin muille
 - uusien aineistojen liittäminen ja vertailu
 - aika-animaatio 2007 - 2012
 
