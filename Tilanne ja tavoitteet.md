@@ -15,9 +15,6 @@ Ohjelma on toteutettu RStudio-ympäristössä. Avoin data haetaan pxweb-paketin 
 
 Ohjelman voi testata suoraan osoitteessa: https://mgrohn.shinyapps.io/Toimialatalueittain/ tai RStudiossa alla olevien tarkempien ohjeiden mukaan.
 
-```
-https://mgrohn.shinyapps.io/Toimialatalueittain/
-```
 Ohjelman käynnistyminen kestää hetken aikaa, koska aineistojen haku suoritetaan ohjelman käynnistyessä. Lisäksi verkon yli ajettuna toiminta on hitaampi kuin RStudio-ympäristössä. 
 
 Liikkeelle on lähdetty aineiston vanhimman ja tuoreimman aineiston tarkastelusta, sekä muutoksesta tarkastelujakson aikana. 
